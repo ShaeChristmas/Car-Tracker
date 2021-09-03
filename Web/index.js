@@ -2,9 +2,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-
+const base = `${__dirname}/`;
 // Middleware for Webhosting.
-app.use(express.static('public'));
+app.use(express.static(`${base}`));
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -13,4 +13,10 @@ app.use((req, res, next) => {
 });
 
 // Redirect
-//app.get();
+app.get('/',(req, res) => {
+    res.sendFile(`${base}/index.html`);
+});
+
+app.listen(port, () => {
+    console.log(`listening on port ${port}`);
+});

@@ -1,5 +1,6 @@
 .button-theme {
-    background:#ffb400;
+    /* background:#ffb400; */
+    background:hsl(299, 41%, 53%);
 }
 
 .button-theme:hover {
@@ -516,7 +517,7 @@ footer .footer-item .contact-info li label a:hover {
 }
 
 .banner .banner-slider-inner h1 span{
-    color:#ffb400;
+    color:hsl(299, 41%, 53%);
 }
 
 /*.main-header .navbar-expand-lg .navbar-nav .active .nav-link {
